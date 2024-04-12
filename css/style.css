@@ -21,6 +21,8 @@ img {
     padding: 0 0 1.5em 0;
 }
 
-h-color {
+.h-color {
     background-color: #fa0000;
+    text-align: center;
 }
+
