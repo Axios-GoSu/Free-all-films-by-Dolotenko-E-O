@@ -1,1 +1,5 @@
-/hashcat-6.2.6
+# VSCode
+.vscode
+
+# Affinity Designer lock files
+*.afdesign~lock~
