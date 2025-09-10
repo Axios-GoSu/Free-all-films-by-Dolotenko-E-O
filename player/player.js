@@ -100,8 +100,38 @@ function selectSource(sourceData) {
 	iframe.allowFullscreen = true;
 	contentElement.innerHTML = '';
 	contentElement.appendChild(iframe);
+
+	// --- Динамическая тень под плеером ---
+	if (sourceData?.dominantColor) {
+		applyDynamicShadowToPlayer(sourceData.dominantColor);
+	} else {
+		extractDominantColorFromIframe(iframe).then(color => applyDynamicShadowToPlayer(color));
+	}
 }
 
+function applyDynamicShadowToPlayer(color) {
+	playerElement.style.boxShadow = `0 0 4rem 1rem ${color}80 inset`;
+	backgroundElement.style.boxShadow = `inset 0 0 6rem 6rem ${color}50`;
+}
+
+async function extractDominantColorFromIframe(iframe) {
+	try {
+		const videoDocument = iframe.contentDocument || iframe.contentWindow.document;
+		const video = videoDocument.querySelector('video');
+		if (!video) return 'rgba(255,255,255,0.3)';
+		const canvas = document.createElement('canvas');
+		canvas.width = 1;
+		canvas.height = 1;
+		const ctx = canvas.getContext('2d');
+		ctx.drawImage(video, 0, 0, 1, 1);
+		const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+		return `rgba(${r},${g},${b},0.3)`;
+	} catch {
+		return 'rgba(255,255,255,0.3)';
+	}
+}
+
+// --- Остальные функции остаются без изменений ---
 function setTitle(title) {
 	document.title = `${title} | Tape Operator`;
 	titleElement.innerHTML = title?.replace(/\((.*)/, (match, content) => `<span>(${content}</span>`);
