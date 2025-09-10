@@ -1,4 +1,6 @@
-![Image](/assets/banner.png)
+<div align="center">
+  <img src="/assets/banner.png" alt="Описание" />
+</div>
 
 С помощью этого скрипта [IMDB](https://www.imdb.com/), [TMDB](https://www.themoviedb.org/), [Kinopoisk](https://www.kinopoisk.ru/) и [Letterboxd](https://letterboxd.com/) станут бесплатными онлайн-кинотеатрами! На каждой странице с фильмом или сериалом в левом верхнем углу появится флажок. Нажав на него, вы откроете плеер с фильмом.
 
@@ -27,14 +29,12 @@
 <br>
 <details>
   <summary>Пиратство - это плохо!</summary>
-
+  <br>
   Но мне глубоко похуй!
   <br>
-  <div align="center">
-  <img src="https://avatars.mds.yandex.net/i?id=e5b0a7483ab6f7e640fe2fc623d04916aeaacab0-16433653-images-thumbs&n=13" alt="Описание" />
-</div>
 
   ![Image](https://avatars.mds.yandex.net/i?id=e5b0a7483ab6f7e640fe2fc623d04916aeaacab0-16433653-images-thumbs&n=13)
+
 </details>
 
 <br>
