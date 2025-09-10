@@ -28,6 +28,7 @@
   <summary>Пиратство - это плохо!</summary>
 
   Но мне глубоко похуй!
+  <br>
   ![Image](https://avatars.mds.yandex.net/i?id=e5b0a7483ab6f7e640fe2fc623d04916aeaacab0-16433653-images-thumbs&n=13)
 </details>
 
