@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name            Tape Operator
-// @namespace       tape-operator
-// @author          Kirlovon
+// @name            Free all films
+// @namespace       Free-all-films-by-Dolotenko-E-O
+// @author          Dolotenko E. O.
 // @description     Watch movies on IMDB, TMDB, Kinopoisk and Letterboxd!
 // @version         3.3.0
 // @icon            https://github.com/Axios-GoSu/Free-all-films-by-Dolotenko-E-O/raw/main/assets/favicon.png

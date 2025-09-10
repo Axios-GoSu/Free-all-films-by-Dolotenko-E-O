@@ -3,7 +3,7 @@ name: Нашел ошибку
 about: Сообщение об нерабочей (или не правильно рабочей) функции плеера или скрипта.
 title: 'Нашел ошибку'
 labels: bug
-assignees: Kirlovon
+assignees: Dolotenko
 
 ---
 

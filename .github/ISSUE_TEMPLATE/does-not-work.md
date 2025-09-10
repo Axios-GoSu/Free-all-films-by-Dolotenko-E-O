@@ -3,7 +3,7 @@ name: Не работает
 about: Сообщение о нерабочем плеере или не появляющемся флажке.
 title: 'Не работает'
 labels: bug
-assignees: Kirlovon
+assignees: Dolotenko
 
 ---
 
